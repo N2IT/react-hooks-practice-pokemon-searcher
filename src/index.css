@@ -21,3 +21,14 @@
 .App-intro {
   font-size: large;
 }
+
+.ui.card {
+  width: 210px;
+  display: inline-flex;
+  margin: 1em 1em;
+
+}
+
+.ui.container {
+  width: 100%;
+}
