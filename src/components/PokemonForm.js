@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "semantic-ui-react";
 
 function PokemonForm() {
+  const [ name, setName ] = useState("")
+  const [ hp, setHp ] = useState(0)
+  const [ frontImage, setFrontImage ] = useState("")
+  const [ backImage, setBackImage ] = useState("")
+
+  const newPokemonData = {
+    name: name,
+    hp: hp,
+    frontImage: frontImage,
+    backImage: backImage,
+  }
+
   return (
     <div>
       <h3>Add a Pokemon!</h3>

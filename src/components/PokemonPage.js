@@ -11,7 +11,8 @@ function PokemonPage() {
   useEffect(() => {
     fetch(`http://localhost:3001/pokemon`)
       .then((res) => res.json())
-      .then((pokemon) => setPokemons(pokemon))
+      .then((pokemon) => console.log(pokemon))
+      
   }, [])
 
   const searchPokemon = pokemons.filter((pokemon) => {
