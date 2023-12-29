@@ -11,7 +11,7 @@ function PokemonPage() {
   useEffect(() => {
     fetch(`http://localhost:3001/pokemon`)
       .then((res) => res.json())
-      .then((pokemon) => console.log(pokemon))
+      .then((pokemon) => setPokemons(pokemon))
       
   }, [])
 
@@ -27,11 +27,15 @@ function PokemonPage() {
     setSearch(value)
   }
 
+  function addNewPokemon(newData){
+    setPokemons([...pokemons, newData])
+  }
+
   return (
     <Container>
       <h1>Pokemon Searcher</h1>
       <br />
-      <PokemonForm />
+      <PokemonForm addNewPokemon={addNewPokemon} />
       <br />
       <Search search={search} setSearch={setSearch} onSearchInput={onSearchInput} />
       <br />
