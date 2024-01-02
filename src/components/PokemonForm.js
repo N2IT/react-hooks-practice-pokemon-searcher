@@ -34,7 +34,7 @@ function PokemonForm({ addNewPokemon }) {
         }}
       >
         <Form.Group widths="equal">
-          <Form.Input fluid label="Name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" name="name" />
+          <Form.Input fluid label="Name" value={name} onChange={(e) => setName(e.target.value.toLowerCase())} placeholder="Name" name="name" />
           <Form.Input fluid label="hp" value={hp} onChange={(e) => setHp(e.target.value)} placeholder="hp" name="hp" />
           <Form.Input
             fluid

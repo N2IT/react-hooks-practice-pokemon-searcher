@@ -1340,6 +1340,15 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "id": 151,
+      "name": "xaviman",
+      "hp": "9999",
+      "sprites": {
+        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png",
+        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/300.png"
+      }
     }
   ]
 }
